@@ -1,3 +1,5 @@
+package contracts.creditcardservice
+
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
@@ -15,9 +17,9 @@ Contract.make {
     }
     response {
         status 200
-        body    """
+        body """
         {
-            "score": "HIGH"
+            "score" : "HIGH"
         }
         """
         headers {
